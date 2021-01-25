@@ -2,6 +2,8 @@
 
 ## Setup
 
+In order to run the test, please make sure you have Chrome installed in your system.
+
 ```
 npm install
 npm test
