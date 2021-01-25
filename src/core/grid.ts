@@ -42,14 +42,14 @@ export const addColumn = ({ columns, ...rest }: Grid, input: Column): Grid => {
     throw new Error("Cannot provide space for new column");
   }
 
-  const existingColumns = columns.map(column => ({
+  const existingColumns = columns.map((column) => ({
     ...column,
-    width: remainingWidth / columns.length
+    width: remainingWidth / columns.length,
   }));
 
   return {
     ...rest,
-    columns: [...existingColumns, input]
+    columns: [...existingColumns, input],
   };
 };
 
@@ -62,9 +62,9 @@ export const popColumn = ({ columns, ...rest }: Grid): Grid => {
 
   return {
     ...rest,
-    columns: remainingColumns.map(column => ({
+    columns: remainingColumns.map((column) => ({
       ...column,
-      width: MAX_WIDTH / remainingColumns.length
-    }))
+      width: MAX_WIDTH / remainingColumns.length,
+    })),
   };
 };

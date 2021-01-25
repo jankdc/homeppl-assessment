@@ -11,13 +11,13 @@ export interface ColumnProps {
 }
 
 export const Column = ({ data }: ColumnProps) => (
-  <div className={`column width-${data.width}`}>
-    {data.content ?? ""}
-  </div>
+  <div className={`column width-${data.width}`}>{data.content ?? ""}</div>
 );
 
 export const Grid = ({ data }: GridProps) => (
   <div className="grid">
-    { data.columns.map((column, index) => <Column key={`column-${index}`} data={column} />)}
+    {data.columns.map((column, index) => (
+      <Column key={`column-${index}`} data={column} />
+    ))}
   </div>
 );
