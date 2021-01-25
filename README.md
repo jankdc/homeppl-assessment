@@ -1,6 +1,13 @@
 # Homeppl Assessment
 
-## Setup
+## Usage
+
+```
+npm install
+npm start
+```
+
+## Testing
 
 In order to run the test, please make sure you have Chrome installed in your system.
 
