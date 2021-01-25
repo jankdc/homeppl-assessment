@@ -16,14 +16,6 @@ npm install
 npm test
 ```
 
-## Usage
-
-```ts
-import { createGrid } from "homeppl";
-
-const grid = createGrid([{ width: 12, content: "some-content" }]);
-```
-
 ## Q&A
 
 ### How do you export the grid as JSON?
