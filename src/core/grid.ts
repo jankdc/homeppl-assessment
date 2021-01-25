@@ -33,3 +33,22 @@ export const createGrid = (columns: Column[]): Grid => {
 
   return { columns };
 };
+
+export const addColumn = ({ columns, ...rest }: Grid, input: Column): Grid => {
+  checkColumn(input);
+  
+  const remainingWidth = MAX_WIDTH - input.width;
+  if (remainingWidth <= 0) {
+    throw new Error("Cannot provide space for new column");
+  }
+  
+  const existingColumns = columns.map(column => ({
+    ...column,
+    width: remainingWidth / columns.length
+  }));
+  
+  return {
+    ...rest,
+    columns: [...existingColumns, input]
+  }; 
+};
