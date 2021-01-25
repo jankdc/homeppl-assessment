@@ -4,7 +4,7 @@ import { createGrid } from "./grid";
 
 describe("createGrid", () => {
   it("returns a grid object if its valid", () => {
-    const columns = [{ width: 1, content: "some-content" }];
+    const columns = [{ width: 12, content: "some-content" }];
     expect(createGrid(columns)).to.deep.equal({ columns });
   });
 
