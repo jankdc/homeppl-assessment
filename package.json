@@ -11,8 +11,7 @@
     "test": "wtr \"src/**/*.test.ts*\""
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@snowpack/plugin-typescript": "^1.2.1",
@@ -21,7 +20,6 @@
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
     "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "@web/test-runner": "^0.12.6",
     "chai": "^4.2.0",
     "snowpack": "^3.0.11",
