@@ -1,0 +1,21 @@
+{
+  "include": [
+    "src",
+    "types"
+  ],
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "noEmit": true,
+    /* Additional Options */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error"
+  }
+}
