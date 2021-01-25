@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import { addColumn, createGrid, Grid, popColumn } from "./grid";
+import { addColumn, createGrid, popColumn } from "./grid";
 
 describe("createGrid", () => {
   it("returns a grid object if its valid", () => {
